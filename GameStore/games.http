@@ -3,3 +3,31 @@ GET http://localhost:5291/games
 ###
 
 GET http://localhost:5291/games/1
+
+###
+
+POST http://localhost:5291/games
+Content-Type: application/json
+
+{
+  "Name": "Super Mario Bros",
+  "Genre": "Platform",
+  "Price": 19.99,
+  "ReleaseDate": "1985-09-13"
+}
+
+###
+
+PUT http://localhost:5291/games/6
+Content-Type: application/json
+
+{
+  "Name": "Super Mario Bros",
+  "Genre": "Platform",
+  "Price": 22.99,
+  "ReleaseDate": "1985-09-13"
+}
+
+###
+
+DELETE http://localhost:5291/games/6
